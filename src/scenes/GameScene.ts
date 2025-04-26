@@ -132,17 +132,17 @@ export class GameScene extends Scene {
   }
 
   createMusic() {
-    const songs = ["song1", "song2"];
-    const song = songs[Phaser.Math.Between(0, songs.length - 1)];
-    const music = this.sound.add(song);
-    // switch song once the current one ends
-    music.on("complete", () => {
-      this.createMusic();
-      music.destroy();
-    });
-    music.play({
-      volume: 0.5,
-    });
+    // const songs = ["song1", "song2"];
+    // const song = songs[Phaser.Math.Between(0, songs.length - 1)];
+    // const music = this.sound.add(song);
+    // // switch song once the current one ends
+    // music.on("complete", () => {
+    //   this.createMusic();
+    //   music.destroy();
+    // });
+    // music.play({
+    //   volume: 0.5,
+    // });
   }
 
   increaseTrickScore(trick: string) {
@@ -161,9 +161,9 @@ export class GameScene extends Scene {
     this.isGameOver = true;
     this.sound.stopAll();
     this.counter.stop();
+    this.playCrashAudio();
     this.obstaclesTimer.destroy();
     this.obstacles.destroy(true);
-    this.sound.play("crash", { volume: 0.9 });
     const title = "press [ENTER] to restart";
     const x = this.cameras.main.centerX;
     const y = this.cameras.main.centerY + 50;
@@ -181,6 +181,11 @@ export class GameScene extends Scene {
     enterKey.on("down", () => {
       this.scene.restart();
     });
+
+  }
+
+  private playCrashAudio() {
+    // this.sound.play("crash", { volume: 0.9 });
 
   }
 

@@ -59,11 +59,9 @@ export class Player extends Phaser.GameObjects.Container {
     // Condición de caída (igual que en tu original)
     if (!this.isJumpling() && (this.angle <= -50 || this.angle >= 0)) {
       this.isManual = false;
-      // this.txt.setBackgroundColor("red");
       this.onCrash();
       this.isCrashed = true;
     } else {
-      // this.txt.setBackgroundColor("white");
     }
   }
 
@@ -79,7 +77,7 @@ export class Player extends Phaser.GameObjects.Container {
 
   public jump() {
     if (this.isJumpling() || this.isCrashed) return;
-    this.scene.sound.play("ollie", { volume: 0.6 });
+    this.playOllieAudio();
     this.getBody().setVelocityY(-600);
   }
 
@@ -92,7 +90,7 @@ export class Player extends Phaser.GameObjects.Container {
       this.playFlipAnimation();
     }
 
-    this.scene.sound.play("trick", { volume: 0.6 });
+    this.playTrickAudio();
 
   }
 
@@ -150,5 +148,13 @@ export class Player extends Phaser.GameObjects.Container {
     this.canTrick = true;
     // this.currentTrick = undefined;
     this.skate.setFrame(0);
+  }
+
+  private playOllieAudio() {
+    // this.scene.sound.play("ollie", { volume: 0.6 });
+  }
+
+  private playTrickAudio() {
+    // this.scene.sound.play("trick", { volume: 0.6 });
   }
 }
