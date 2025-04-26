@@ -8,8 +8,10 @@ The theme of the jam was "balance" so, with homer0 (a friend and a faithful susc
 
 ## Controls
 
-[SPACE] - Jump
-[C] - Trick
+[LEFT] - balance left  
+[RIGHT] - balance right  
+[SPACE] - Jump   
+[C] - Trick  
 
 ... its all :P
 
@@ -21,6 +23,6 @@ The theme of the jam was "balance" so, with homer0 (a friend and a faithful susc
 ## Social
 
 You can find me on 
-- [Twitter (its twitter cmon)](https://twitter.com/elmiguedev) 
+- [Twitter (is twitter, cmon)](https://twitter.com/elmiguedev) 
 - [Twitch](https://twitch.tv/elmiguedev)
 - [Linked In](https://linkedin.com/in/elmiguedev)
