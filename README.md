@@ -6,6 +6,10 @@ It is a game made with Phaser and some assets with aseprite :P.
 
 The theme of the jam was "balance" so, with homer0 (a friend and a faithful suscriber of my twitch channel) thought about create a game about a skate doing manual all the time (we are fans of THPS series lol)
 
+## Game URL
+
+[https://elmiguedev.github.io/gamedevjs-jam-2025](https://elmiguedev.github.io/gamedevjs-jam-2025)
+
 ## Controls
 
 [LEFT] - balance left  
