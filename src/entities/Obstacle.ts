@@ -9,10 +9,10 @@ export class Obstacle extends Phaser.Physics.Arcade.Sprite {
     this.setPosition(x, y);
     this.setVelocity(-500, 0);
     this.resizeBody(frame);
-
   }
 
   private resizeBody(frame: number) {
+    // WOLOLO
     switch (frame) {
       case 0:
         this.body?.setSize(120, 60);
