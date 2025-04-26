@@ -151,10 +151,10 @@ export class Player extends Phaser.GameObjects.Container {
   }
 
   private playOllieAudio() {
-    // this.scene.sound.play("ollie", { volume: 0.6 });
+    this.scene.sound.play("ollie", { volume: 0.6 });
   }
 
   private playTrickAudio() {
-    // this.scene.sound.play("trick", { volume: 0.6 });
+    this.scene.sound.play("trick", { volume: 0.6 });
   }
 }
